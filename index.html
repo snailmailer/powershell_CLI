@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerShell Commands Reference Guide</title>
+    <meta name="description" content="Comprehensive reference guide for PowerShell commands with syntax, examples, and usage details.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>⚡ PowerShell Commands Reference</h1>
+                <p class="subtitle">Comprehensive guide to PowerShell cmdlets with formulas, usage, and examples</p>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search commands..." class="search-input">
+            </div>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All Commands</button>
+            <button class="filter-btn" data-category="file">File Management</button>
+            <button class="filter-btn" data-category="process">Processes</button>
+            <button class="filter-btn" data-category="service">Services</button>
+            <button class="filter-btn" data-category="network">Network</button>
+            <button class="filter-btn" data-category="system">System Info</button>
+            <button class="filter-btn" data-category="security">Security</button>
+            <button class="filter-btn" data-category="content">Content</button>
+            <button class="filter-btn" data-category="pipeline">Pipeline</button>
+            <button class="filter-btn" data-category="variable">Variables</button>
+            <button class="filter-btn" data-category="module">Modules</button>
+            <button class="filter-btn" data-category="help">Help</button>
+            <button class="filter-btn" data-category="formatting">Formatting</button>
+            <button class="filter-btn" data-category="registry">Registry</button>
+            <button class="filter-btn" data-category="remoting">Remoting</button>
+        </div>
+
+        <div id="commandsContainer" class="commands-grid"></div>
+    </div>
+
+    <script src="commands-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
